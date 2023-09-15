@@ -1,0 +1,46 @@
+<!-- <div class="what-area what-page de-pb">
+	<div class="container">
+		<div class="what-wpr grid-3">
+
+			{%- for whatarea1 in site.whatarea1 -%}
+
+			<div class="what-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+				<div class="what-icon">
+					<img src="{{ whatarea1.image  | relative_url }}" alt="thumb">
+				</div>
+				<div class="what-info">
+					<h5>{{ whatarea1.title }}</h5>
+					<p>{{ whatarea1.description }}</p>
+					<a href="{{ whatarea1.service_link }}" class="what-btn">{{ whatarea1.service_text  }}</a>
+				</div>
+			</div>
+
+			{%- endfor -%}
+
+		</div>
+	</div>
+</div> -->
+
+<div class="what-area what-page de-pb">
+    <div class="container">
+        <div class="what-wpr grid-3">
+
+            {%- for service in site.services -%}
+
+            <div class="what-box wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                <div class="what-icon">
+                    <img src="{{ service.image | relative_url }}" alt="thumb">
+                </div>
+                <div class="what-info">
+                    <h5>{{ service.title }}</h5>
+                    <p>{{ service.description }}</p>
+                    <!-- Updated link to point to the individual service page -->
+                    <a href="{{ service.url }}" class="what-btn">Explore Service</a>
+                </div>
+            </div>
+
+            {%- endfor -%}
+
+        </div>
+    </div>
+</div>

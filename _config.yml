@@ -1,0 +1,705 @@
+####################################
+####### Global start    ############
+####################################
+####################################
+######     Global start     ######
+####################################
+
+name : 'Circunetics Research'
+title : 'Innovative Research Consulting & Expert Solutions'
+email : 'circunetics@gmail.com'
+description: >-
+  Circunetics Research offers cutting-edge research consulting and expert solutions to empower businesses and organizations. With a team of dedicated specialists, we drive innovation and ensure success for our clients. Discover the potential of your business with Circunetics Research.
+baseurl : "" # the subpath of your site, e.g. /blog
+url : "" # the base hostname & protocol for your site, e.g. http://example.com
+locale : "en_US"
+logo : assets/img/logo/logo-no-background (1).png #assets/img/logo/circunetics-logo-no-background.png
+logo2 : assets/img/logo/logo-no-background (1).png  #circunetics-logo-no-background.png
+
+author:
+  name: Circunetics Research
+
+
+  
+# paginate
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:slug/
+  pages:
+    output: true
+    permalink: /:collection/:slug/
+  works:
+    output: true
+    permalink: /work/:path/
+  services:
+    output: true
+    permalink: /service/:path/
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+  # _pages 
+  - scope:
+      path: "" # we can not defile path /blog/index.html for pagination
+      type: pages
+    values:
+      layout: page
+
+
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#
+
+disqus_shortname: anvodstudio-demo
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-archives
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-archives
+
+# jekyll archive 
+jekyll-archives:
+  enabled: 
+    - tags
+    - categories
+  layouts:
+    category: category-archive
+    tag: tag-archive
+  permalinks:
+    tag: '/tags/:name/'
+    category: '/categories/:name/'
+
+####################################
+######      Global end      ######
+####################################
+getform_id: 'e5e1f635-da5d-4fc9-9a47-2e10735146f5' # active contact https://getform.io/f/1234
+
+
+# SUBSCRIVE FORM 
+mailchimp:
+  user-id: 'c4e151b63d84a9bac731252a2'
+  list-id: 'ca518aaa14'
+  username: 'jekylltemplate.us5'
+
+####################################
+######        Copyright       ######
+####################################
+copyright_text: Copyright © 2019 All rights reserved to
+company_url: '#'
+
+
+# SEO Related
+google_site_verification : ''
+bing_site_verification   : ''
+yandex_site_verification : ''
+naver_site_verification  : ''
+
+# Social Sharing
+twitter:
+  username               : ''
+facebook:
+  username               : ''
+  app_id                 : ''
+  publisher              : ''
+og_image                 :  '/assets/img/og_image.jpg' # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : '' # Person or Organization (defaults to Person)
+  name                   : '' # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          : ''
+    anonymize_ip         : true # true, false (default)
+
+##########################################################################
+################################# menus  #################################
+##########################################################################
+menus:
+  - name: Home
+    url: '/'
+#   - name: About
+#     url: /about/
+  - name: Service
+    url:  '/service.html'
+  - name: 'Our Projects'
+    url: '/work.html'
+#   - name: 'Our Team'
+#     url: '/team.html'
+#   - name: Pages
+#     url: '#'
+#     children: 
+#     - name: Service
+#       url:  '/service.html'
+#     - name: 'Our Projects'
+#       url: '/work.html'
+#     - name: 'Our Team'
+#       url: '/team.html'
+#     - name: '404'
+#       url: '/404.html'
+  - name: Blog
+    url: '/blog/'
+  - name: Contact
+    url: /contact.html
+
+##########################################################################
+######################## socials profile #################################
+##########################################################################
+socials:
+  - url: '#'
+    icon: 'fab fa-facebook-f'
+  - url: '#'
+    icon: 'fab fa-instagram'
+  - url: '#'
+    icon: 'fab fa-twitter'
+  - url: '#'
+    icon: 'fab fa-youtube'
+
+##########################################################################
+############################ about #######################################
+##########################################################################
+about:
+  description: Our sustainable finance consulting firm specializes in helping institutions and organizations adopt sustainable finance practices. Our core services include sustainability strategy development, ESG risk and impact assessments, sustainable finance product development, and ongoing support to help our clients achieve their sustainability goals.
+  image: assets/img/about/about-1.png
+  subtitle: Your Partner in Sustainable Finance
+  title: About Our Sustainable Finance Consulting Services
+
+about2:
+  bg_image: assets/img/about/about-3.png
+  description: Our company stands out from other sustainable finance consulting firms in a number of ways. Our team of experts has deep knowledge and experience in the field of sustainable finance, and we bring a unique perspective to our work. We are committed to providing customized solutions that meet the specific needs of each of our clients, and we have a proven track record of helping organizations achieve their sustainability goals.
+  list: <li> <i class="icofont-check-circled"></i> Expert Team with 20+ Years of Experience 
+    </li> <li> <i class="icofont-check-circled"></i> Customized Solutions for Your Unique Needs </li>
+    <li> <i class="icofont-check-circled"></i> Ongoing Support for Your Success </li>
+  subtitle: What Sets Us Apart
+  title: Sustainable Finance Consulting Services
+  work_link: '/services/'
+  work_text: Learn More <i class="icofont-long-arrow-right"></i>
+
+##########################################################################
+############################ blog #######################################
+##########################################################################
+
+blog:
+  intro: See our Latest &amp; Popular Tips &amp; Tricks <br> from our Experts
+  title: Blog
+
+##########################################################################
+############################ footer ######################################
+##########################################################################
+
+footer:
+  address: '<li>Address: Lavaterstrasse, Zurich 8002, Switzerland</li> <li>Phone:
+    <a href="#">+41762938590</a> </li> <li>Email: <a href="#">circunetics@gmail.com</a>
+    </li>'
+  bg_image: assets/img/footer/footer-bg.png
+  copyright: "© 2023 All Right Reserved, Circunetics Research Ltd."
+  description: Our company specializes in providing sustainable finance consulting services for institutions. We have a team of experts with extensive knowledge and experience in sustainable finance, who work closely with our clients to understand their specific needs and provide tailored solutions. Our services include environmental, social and governance (ESG) integration, impact investing, sustainable finance strategy development, and more. Our goal is to help institutions align their financial practices with sustainable development goals and contribute to a more responsible and sustainable future.
+  logo: assets/img/logo/logo-no-background (1).png
+footer2:
+  address: '<li>Address: [insert address here]</li> <li>Phone:
+    <a href="#">[insert phone number here]</a> </li> <li>Email: <a href="#">[insert email here]</a>
+    </li>'
+  copyright: "© 2023 All Right Reserved, [insert company name here]"
+  helpfullink: Helpful Links
+  logo: assets/img/logo/[insert company logo here]
+  quicklink: Quick Links
+  description: [insert company description here]
+
+
+# footer:
+#   address: '<li>Address: House 00, Road No : 01, Street address, ABC</li> <li>Phone:
+#     <a href="#">+0 123-456-7890</a> </li> <li>Email: <a href="#">info@example.com</a>
+#     </li>'
+#   bg_image: assets/img/footer/footer-bg.png
+#   copyright: "© 2020 All Right Reserved, Ailng"
+#   description: This is Photoshop's version of LoreiIpsum. Aenean sollicitudin,
+#   logo: assets/img/logo/logo-no-background (1).png
+# footer2:
+#   address: '<li>Address: House 00, Road No : 01, Street address, ABC</li> <li>Phone:
+#     <a href="#">+0 123-456-7890</a> </li> <li>Email: <a href="#">info@example.com</a>
+#     </li>'
+#   copyright: "© 2020 All Right Reserved, Ailng"
+#   helpfullink: Helpful Links
+#   logo: assets/img/logo/logo-no-background (1).png
+#   quicklink: Quick Links
+#   description: 'Maboriosam in a nesciung egemagnaeli montant odiy. '
+
+########################################################################
+##########################  worksItems #################################
+########################################################################
+
+# worksItems:
+#   - image: '/assets/img/blog/1.jpg'
+#     title: 'Sustainable Finance Strategy'
+#     subtitle: 'Develop and Implement a Sustainable Finance Strategy'
+#   - image: '/assets/img/blog/2.jpg'
+#     title: 'ESG Integration in Investment Process'
+#     subtitle: 'Integrate ESG Factors in Investment Process'
+#   - image: '/assets/img/blog/3.jpg'
+#     title: 'Sustainable Finance Policy Development'
+#     subtitle: 'Develop and Implement a Sustainable Finance Policy'
+#   - image: '/assets/img/blog/1.jpg'
+#     title: 'Impact Investing Advisory'
+#     subtitle: 'Provide Advisory Services for Impact Investing'
+#   - image: '/assets/img/blog/2.jpg'
+#     title: 'Sustainable Finance Training'
+#     subtitle: 'Provide Training and Awareness on Sustainable Finance'
+#   - image: '/assets/img/blog/3.jpg'
+#     title: 'Sustainable Finance Reporting'
+#     subtitle: 'Assist with Sustainable Finance Reporting and Disclosures'
+
+
+
+# collections:
+#   works:
+#     output: true
+#     permalink: /work/:path/
+
+
+##########################################################################
+######################## hero ############################################
+##########################################################################
+hero1:
+  intro: Sustainable Finance Consulting
+  service_link: service.html
+  service_text: Learn More <i class="icofont-long-arrow-right"></i>
+  subtitle: Our team of experts helps institutions and organizations adopt sustainable finance practices for a better future.
+  title: Empowering Institutions for a Sustainable Future
+  title_link: '/work.html'
+  title_text: See Our Work <i class="icofont-long-arrow-right"></i>
+  video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
+  video_text: <i class="fas fa-play"></i> <span class="how-txt">How We Help</span>
+hero2:
+  intro: Helping Organizations Adopt Sustainable Finance
+  right_img: assets/img/header/sustainable-finance.png
+  service_link: service.html
+  service_text: Learn More <i class="icofont-long-arrow-right"></i>
+  subtitle: Our team of experts provides tailored solutions to help organizations integrate sustainable finance practices into their operations.
+  video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
+  video_text: <i class="fas fa-play"></i> <span class="how-txt">How We Help</span>
+  image: assets/img/work/sustainable-finance.png
+
+
+
+##########################################################################
+######################## promo ############################################
+##########################################################################
+promo:
+  contact_link: contact.html
+  contact_text: Contact Us
+  subtitle: Contact Us
+  title: If You Have any Projects or Task for Us. Please Contact Us
+
+##########################################################################
+######################## subscribe #######################################
+##########################################################################
+subscribe:
+  description: To get Our Weekly &amp; Monthly News. Subscribe Newsletter.
+  image: assets/img/subscribe/sub-right.png
+  title: Newsletter
+
+
+
+##########################################################################
+######################## whatwedo #######################################
+##########################################################################
+whatwedo:
+  contact_link: contact.html
+  contact_text: Contact Us
+  subtitle: Our Services
+  title: We Offer Expert Sustainable Finance Consulting for Institutions
+
+
+
+##########################################################################
+######################## Features #######################################
+##########################################################################
+features:
+- image: assets/img/icons/man.png
+  type: Sustainable Finance Expertise
+  description: Our team consists of experts in sustainable finance who provide comprehensive consulting services to institutions looking to integrate sustainability into their investment strategies and operations.
+- image: assets/img/icons/checked.png
+  type: In-depth Analysis
+  description: We perform thorough analysis of clients current operations and investments to identify areas for improvement and provide actionable recommendations for integrating sustainability.
+- image: assets/img/icons/rating.png
+  type: Tailored Strategies
+  description: We work with clients to develop customized sustainable finance strategies that align with their unique goals and objectives, taking into account their investment portfolio, risk tolerance, and impact objectives.
+- image: assets/img/icons/consult.png
+  type: Effective Implementation
+  description: Our team provides support throughout the implementation process, ensuring that clients have the resources and expertise needed to effectively integrate sustainable finance into their operations.
+
+features2:
+- image: assets/img/icons/man.png
+  type: Measured Impact
+  description: We measure and monitor the impact of our clients sustainable finance initiatives, providing regular reports on the positive impact they are making on the environment and society.
+- image: assets/img/icons/checked.png
+  type: Compliance Assistance
+  description: We assist clients in navigating the complex regulatory landscape around sustainable finance, ensuring that their investments and operations are in compliance with relevant laws and regulations.
+- image: assets/img/icons/rating.png
+  type: Stakeholder Engagement
+  description: We engage with clients stakeholders, including investors, customers, and employees, to communicate the importance of sustainable finance and build support for sustainable finance initiatives.
+- image: assets/img/icons/consult.png
+  type: Continuous Improvement
+  description: Our team is committed to continuous improvement, staying up-to-date on the latest developments in sustainable finance and incorporating new best practices into our clients' operations.
+
+
+
+##########################################################################
+############################ facts #######################################
+##########################################################################
+facts:
+- image: assets/img/icons/1.png
+  counter: '2382'
+  title: Project Completed
+- image: assets/img/icons/2.png
+  counter: '1382'
+  title: Team Members
+- image: assets/img/icons/feedback.png
+  counter: '2382'
+  title: Happy Clients
+
+##########################################################################
+############################ wedo #######################################
+##########################################################################
+
+wedo:
+- image: assets/img/icons/3.png
+  title: Sustainable Finance Strategy
+  description: Our experts help institutions develop sustainable finance strategies that align with their goals and values.
+  service_text: Learn More
+  service_link: '/sustainable-finance-strategy/'
+- image: assets/img/icons/4.png
+  title: ESG Integration
+  description: We assist institutions in integrating Environmental, Social, and Governance (ESG) considerations into their investment processes.
+  service_text: Learn More
+  service_link: '/esg-integration/'
+- image: assets/img/icons/5.png
+  title: Impact Investing
+  description: We advise institutions on impact investing opportunities and help them design and execute impact investment portfolios.
+  service_text: Learn More
+  service_link: '/impact-investing/'
+ 
+  
+##########################################################################
+######################## work #######################################
+##########################################################################
+work:
+  description: Recently done case study by our <br> team
+  more_link: /work.html
+  more_text: Explore More <i class="icofont-long-arrow-right"></i>
+  title: Protfolio
+works:
+- image: assets/img/work/1.png
+- image: assets/img/work/2.png
+- image: assets/img/work/3.png
+
+##########################################################################
+######################## reviews #######################################
+##########################################################################
+reviews:
+- quotes: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According
+    the agency is best for growing your business what your A best consulting business
+    agency.
+  author: Atardam Steve
+  status: Founder
+- quotes: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According
+    the agency is best for growing your business what your A best consulting business
+    agency.
+  author: Atardam Steve
+  status: Founder
+
+####################################################################
+######################## feature ###################################
+####################################################################
+
+
+
+feature_service:
+  title: 'Success Stories of Our Sustainable Finance Consulting Services'
+  subtitle: 'Case Studies'
+
+feature_services:
+  - name: Sustainable Finance Strategy Development
+    image: '/assets/img/work/7.jpg'
+    description: Our team has helped a leading financial institution develop a sustainable finance strategy that aligns with their ESG goals and addresses the challenges of the financial industry.
+    service_text: Read More
+    service_link: '/sustainable-finance-strategy-development/'
+  - name: ESG Integration in Investment Process
+    image: '/assets/img/work/8.jpg'
+    description: We have assisted a large investment firm in integrating environmental, social, and governance factors into their investment process to enhance their impact and performance.
+    service_text: Read More
+    service_link: '/esg-integration-investment-process/'
+  - name: Sustainable Finance Product Development
+    image: '/assets/img/work/9.jpg'
+    description: Our experts have worked with a prominent bank to develop innovative sustainable finance products that meet the needs of their clients and contribute to a more sustainable future.
+    service_text: Read More
+    service_link: '/sustainable-finance-product-development/'
+
+
+
+####################################################################
+######################## feedbacks #################################
+####################################################################
+feedbacks:
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According
+    the agency is best for growing your business what your A best consulting business
+    agency.
+  author: Atardam Steve
+  status: Founder
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According
+    the agency is best for growing your business what your A best consulting business
+    agency.
+  author: Atardam Steve
+  status: Founder
+- image: assets/img/review/review-pic.png
+  description: Lorem Ipsum dolor seat ameat dui too consecteture more be elite. According
+    the agency is best for growing your business what your A best consulting business
+    agency.
+  author: Atardam Steve
+  status: Founder
+
+
+
+####################################################################
+######################## faq ######################################
+####################################################################
+
+faq:
+  description: Get answers to your questions about Sustainable Finance for Institutions
+  image: assets/img/faq/fag-bg.png
+  title: Frequently Asked Questions
+faq2:
+  description: Our experts are dedicated to providing comprehensive and tailored consulting services for institutions in the field of sustainable finance.
+  image: assets/img/review/review-pic-2.jpg
+  subtitle: Have more questions? Check out our FAQs.
+  title: Questions & Answers
+
+faqs:
+- title: 1. What is sustainable finance?
+  description: Sustainable finance refers to the integration of environmental, social, and governance (ESG) factors into financial decision making. This approach aims to balance financial returns with positive social and environmental outcomes.
+- title: 2. Why is sustainable finance important for institutions?
+  description: Institutions play a critical role in driving investment towards sustainable initiatives. By incorporating sustainable finance practices, institutions can align their investments with their values and contribute to a more sustainable future.
+- title: 3. How can institutions integrate sustainable finance into their investment processes?
+  description: Institutions can integrate sustainable finance into their investment processes by incorporating ESG factors into their due diligence and investment decision-making processes, actively engaging with companies on ESG issues, and implementing sustainability-themed investment strategies.
+- title: 4. What services does your consulting firm offer for institutions in the field of sustainable finance?
+  description: Our consulting firm offers a range of services for institutions in the field of sustainable finance, including ESG research and analysis, sustainable investment strategy development, stakeholder engagement, and impact measurement and reporting.
+- title: 5. How can institutions measure the impact of their sustainable finance investments?
+  description: Institutions can measure the impact of their sustainable finance investments by using a variety of methods, including ESG scorecard assessments, sustainability reporting frameworks, and impact metrics such as carbon footprint or avoided emissions.
+
+faqs2:
+- title: 1. What is the difference between sustainable finance and traditional finance?
+  description: Traditional finance focuses primarily on financial returns, while sustainable finance considers both financial returns and positive social and environmental outcomes.
+- title: 2. Can institutions still achieve financial returns with sustainable finance investments?
+  description: Yes, institutions can still achieve financial returns with sustainable finance investments. In fact, many studies have shown that ESG-focused investments can perform similarly to or better than traditional investments.
+- title: 3. How can institutions ensure the sustainability of their investments over the long-term?
+  description: Institutions can ensure the sustainability of their investments over the long-term by incorporating ESG factors into their investment decision-making processes, regularly monitoring the sustainability performance of their investments, and engaging with companies on ESG issues.
+- title: 4. What role do stakeholders play in sustainable finance for institutions?
+  description: Stakeholders play an important role in sustainable finance for institutions. By engaging with stakeholders and incorporating their perspectives into investment decision-making, institutions can ensure that their investments align with the values and priorities of their stakeholders.
+- title: 5. How can institutions drive sustainability in the financial sector?
+  description: Institutions can drive sustainability in the financial sector by incorporating sustainable finance practices into their own investment processes, advocating for greater sustainability in the industry, and investing in sustainable finance initiatives and technologies.
+
+
+####################################################################
+######################## case ######################################
+####################################################################
+service:
+  subtitle: Services
+  title: We Providing Some Special Services <br> To Our Clients.
+singlearea:
+  image: assets/img/subscribe/sub-right.png
+  subtitle: Newsletter
+  title: To get Our Weekly &amp; Monthly News Subscribe Newsletter.
+
+case:
+  subtitle: Recently Some Cases Done by Our <br> Agency Team
+  title: Case Study
+  work_link: '/work/'
+  work_text: Explore More <i class="icofont-long-arrow-right"></i>
+cases:
+- image: assets/img/work/7.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+- image: assets/img/work/8.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+- image: assets/img/work/9.jpg
+  title: Business / Business Analysis
+  subtitle: Business Ananlysis &amp; Strategy
+
+
+
+# collections:
+#   services:
+#     output: true
+#     permalink: /service/:path/
+
+
+# whatarea1:
+# - image: assets/img/icons/3.png
+#   title: Sustainability Assessment
+#   description: Our team provides sustainability assessments for financial institutions, helping them understand their current sustainability practices and identify areas for improvement.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/4.png
+#   title: ESG Integration
+#   description: Our team helps financial institutions integrate environmental, social, and governance (ESG) factors into their investment processes and decision-making.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/5.png
+#   title: Sustainable Investment Strategies
+#   description: Our team helps financial institutions develop and implement sustainable investment strategies that align with their values and contribute to a more sustainable future.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/6.png
+#   title: Impact Investing
+#   description: Our team helps financial institutions design and implement impact investing strategies that generate positive social and environmental outcomes while delivering financial returns.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/7.png
+#   title: Green Bond Issuance
+#   description: Our team provides guidance and support for financial institutions looking to issue green bonds, helping them access new sources of capital for sustainable projects.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/8.png
+#   title: ESG Reporting and Transparency
+#   description: Our team helps financial institutions improve their ESG reporting and transparency, enabling them to better communicate their sustainability practices to stakeholders.
+#   service_text: Explore Service
+#   service_link: '#'
+
+
+
+
+# whatarea1:
+# - image: assets/img/icons/3.png
+#   title: Business Analysis
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/4.png
+#   title: Financial Planning
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/5.png
+#   title: Digital Marketing
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/6.png
+#   title: Business Consulting
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/7.png
+#   title: Creative Design
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+# - image: assets/img/icons/8.png
+#   title: Email Marketing
+#   description: According to lorem ipsum dolo siti ameat dui too consecteture consecteture
+#     elite.
+#   service_text: Explore Service
+#   service_link: '#'
+
+
+####################################################################
+######################## Team ######################################
+####################################################################
+# teams:
+# - image: assets/img/team/1.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/2.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/3.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/4.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/5.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/6.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/7.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
+# - image: assets/img/team/8.jpg
+#   username: Emiley Philifs
+#   profession: Digital marketer
