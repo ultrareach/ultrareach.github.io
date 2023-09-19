@@ -426,8 +426,10 @@ hero1:
   intro: Big Data Communication Solutions
   service_link: service.html
   service_text: Explore More <i class="icofont-long-arrow-right"></i>
-  subtitle: UltraReach leverages big data to offer tailored enterprise communication solutions across diverse industries.
-  title: Revolutionizing Communication with Data Insights
+  subtitle: UltraReach leverages big data to offer tailored enterprise communication solutions, connecting with over 400 million businesses across diverse industries.
+  # UltraReach leverages big data to offer tailored enterprise communication solutions across diverse industries.
+  title: Revolutionizing Communication: Connecting to Half the World's Population
+  # Revolutionizing Communication with Data Insights
   title_link: '/work.html'
   title_text: Our Projects <i class="icofont-long-arrow-right"></i>
   video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
