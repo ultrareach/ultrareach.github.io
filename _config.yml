@@ -672,15 +672,15 @@ feature_services:
 feedbacks:
 - image: assets/img/review/review-pic.png
   description: UltraReach's big data solutions have transformed our communication strategies. Their expertise is unparalleled, and they've been instrumental in our success.
-  author: John Doe
+  author: Mark Johnson
   status: CEO
 - image: assets/img/review/review-pic.png
   description: The precision matchmaking service from UltraReach is a game-changer. We've been able to connect with the right clients efficiently.
-  author: Jane Smith
+  author: Emily Williams
   status: Director
 - image: assets/img/review/review-pic.png
   description: UltraReach's M&A communication strategies have streamlined our merger processes, ensuring clear communication between all stakeholders.
-  author: Richard Brown
+  author: Michael Davis
   status: CFO
 
 ####################################################################
