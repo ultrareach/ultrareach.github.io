@@ -418,7 +418,9 @@ footer2:
 #   type: Continuous Improvement
 #   description: Our team is committed to continuous improvement, staying up-to-date on the latest developments in sustainable finance and incorporating new best practices into our clients' operations.
 
-
+# UltraReach leverages big data to offer tailored enterprise communication solutions across diverse industries.
+# Revolutionizing Communication with Data Insights
+  
 ##########################################################################
 ######################## hero ############################################
 ##########################################################################
@@ -427,9 +429,7 @@ hero1:
   service_link: service.html
   service_text: Explore More <i class="icofont-long-arrow-right"></i>
   subtitle: UltraReach leverages big data to offer tailored enterprise communication solutions, connecting with over 400 million businesses across diverse industries.
-  # UltraReach leverages big data to offer tailored enterprise communication solutions across diverse industries.
   title: Revolutionizing Communication: Connecting to 3 Billion Individuals
-  # Revolutionizing Communication with Data Insights
   title_link: '/work.html'
   title_text: Our Projects <i class="icofont-long-arrow-right"></i>
   video_link: https://www.youtube.com/watch?v=ku6dEtynrRI
