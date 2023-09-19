@@ -11,8 +11,8 @@ description: >-
 baseurl : ""
 url : ""
 locale : "en_US"
-# logo : assets/img/logo/ultrareach-logo-no-background.png
-# logo2 : assets/img/logo/ultrareach-logo-no-background.png
+logo : assets/img/logo/ultrareach-logo.png
+logo2 : assets/img/logo/ultrareach-logo.png
 
 author:
   name: UltraReach
@@ -261,7 +261,7 @@ footer:
   bg_image: assets/img/footer/footer-bg.png
   copyright: "© 2023 All Right Reserved, UltraReach Inc."
   description: UltraReach harnesses the power of big data to revolutionize enterprise communication solutions. Our expertise spans across myriad industries, ensuring tailored solutions for diverse applications. From global data mastery to M&A communication excellence, we provide a comprehensive suite of services. Dive into the future of communication with UltraReach.
-  # logo: assets/img/logo/ultrareach-logo-no-background.png
+  logo: assets/img/logo/ultrareach-logo.png
   
   # copyright: "© 2023 All Right Reserved, Circunetics Research Ltd."
   # description: Our company specializes in providing sustainable finance consulting services for institutions. We have a team of experts with extensive knowledge and experience in sustainable finance, who work closely with our clients to understand their specific needs and provide tailored solutions. Our services include environmental, social and governance (ESG) integration, impact investing, sustainable finance strategy development, and more. Our goal is to help institutions align their financial practices with sustainable development goals and contribute to a more responsible and sustainable future.
