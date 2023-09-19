@@ -1,30 +1,25 @@
-####################################
-####### Global start    ############
-####################################
+
 ####################################
 ######     Global start     ######
 ####################################
 
-name : 'Circunetics Research'
-title : 'Innovative Research Consulting & Expert Solutions'
-email : 'circunetics@gmail.com'
+name : 'UltraReach'
+title : 'Powering Enterprise Communication with Big Data'
+email : 'contact@ultrareach.com'
 description: >-
-  Circunetics Research offers cutting-edge research consulting and expert solutions to empower businesses and organizations. With a team of dedicated specialists, we drive innovation and ensure success for our clients. Discover the potential of your business with Circunetics Research.
-baseurl : "" # the subpath of your site, e.g. /blog
-url : "" # the base hostname & protocol for your site, e.g. http://example.com
+  UltraReach harnesses big data to revolutionize enterprise communication solutions. With expertise spanning myriad industries, we provide tailored solutions for diverse applications. Discover the future of communication with UltraReach.
+baseurl : ""
+url : ""
 locale : "en_US"
-logo : assets/img/logo/logo-no-background (1).png #assets/img/logo/circunetics-logo-no-background.png
-logo2 : assets/img/logo/logo-no-background (1).png  #circunetics-logo-no-background.png
+logo : assets/img/logo/ultrareach-logo-no-background.png
+logo2 : assets/img/logo/ultrareach-logo-no-background.png
 
 author:
-  name: Circunetics Research
+  name: UltraReach
 
-
-  
 # paginate
 paginate: 6
 paginate_path: "/blog/page:num/"
-
 
 keep_files:
   - .git
@@ -32,14 +27,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -67,7 +60,6 @@ collections:
     output: true
     permalink: /service/:path/
 
-
 # Defaults
 defaults:
   # _posts
@@ -78,22 +70,16 @@ defaults:
       layout: post
   # _pages 
   - scope:
-      path: "" # we can not defile path /blog/index.html for pagination
+      path: ""
       type: pages
     values:
       layout: page
 
+timezone: America/Los_Angeles
 
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-#
-
-disqus_shortname: anvodstudio-demo
-
+disqus_shortname: ultrareach-discussions
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -103,7 +89,7 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-sitemap
   - jekyll-feed
@@ -133,21 +119,19 @@ jekyll-archives:
 ####################################
 ######      Global end      ######
 ####################################
-getform_id: 'e5e1f635-da5d-4fc9-9a47-2e10735146f5' # active contact https://getform.io/f/1234
+getform_id: 'e5e1f635-da5d-4fc9-9a47-2e10735146f5'
 
-
-# SUBSCRIVE FORM 
+# SUBSCRIBE FORM 
 mailchimp:
   user-id: 'c4e151b63d84a9bac731252a2'
   list-id: 'ca518aaa14'
-  username: 'jekylltemplate.us5'
+  username: 'ultrareach.us5'
 
 ####################################
 ######        Copyright       ######
 ####################################
-copyright_text: Copyright © 2019 All rights reserved to
+copyright_text: Copyright © 2023 All rights reserved to
 company_url: '#'
-
 
 # SEO Related
 google_site_verification : ''
@@ -157,25 +141,23 @@ naver_site_verification  : ''
 
 # Social Sharing
 twitter:
-  username               : ''
+  username               : 'UltraReach'
 facebook:
-  username               : ''
+  username               : 'UltraReach'
   app_id                 : ''
   publisher              : ''
-og_image                 :  '/assets/img/og_image.jpg' # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
+og_image                 :  '/assets/img/og_image.jpg'
 social:
-  type                   : '' # Person or Organization (defaults to Person)
-  name                   : '' # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : 'Organization'
+  name                   : 'UltraReach'
+  links: []
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : false
   google:
     tracking_id          : ''
-    anonymize_ip         : true # true, false (default)
+    anonymize_ip         : true
 
 ##########################################################################
 ################################# menus  #################################
